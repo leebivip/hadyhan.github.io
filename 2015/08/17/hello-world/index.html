@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Hello World | Hedy&#39;s blog</title>
+  <title>Hexo探索（一） | Hedy&#39;s blog</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -226,24 +226,44 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2015-08-14T09:00:37.644Z" itemprop="datePublished">
-          2015-08-14
+      <time datetime="2015-08-16T16:14:36.367Z" itemprop="datePublished">
+          2015-08-17
       </time>
     
 </span>
-                <h1>Hello World</h1>
+                <h1>Hexo探索（一）</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+      		<h2 id="Hexo探索（一）：安装配置问题与解决"><em>Hexo探索（一）：安装配置问题与解决</em></h2><blockquote>
+<p>  刚听说Hexo的时候，我完全不知道这是什么。什么叫做小白起步、雏鹰起飞……但是，真正用起来，却觉得这真是一个神奇的东西。</p>
+</blockquote>
+<ul>
+<li>用hexo在github上创建个人博客<br>  推介一个详细的blog：<a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">http://www.jianshu.com/p/05289a4bc8b2</a></li>
+</ul>
+<hr>
+<ul>
+<li><p><strong>hexo安装配置问题与解决</strong></p>
+<ol>
+<li>首先，在hexo根文件下右击–Git Bush做好准备；</li>
+<li><p>问题一：无数次<code>hexo d</code>，皆失败；</p>
+<blockquote>
+<p>解决：<br><code>hexo init</code>–<code>npm install hexo --save</code>–<code>hexo g</code>–<code>npm install</code>–<code>npm install hexo-deployer-git --save</code>–<code>hexo g</code>–<code>hexo d</code>。</p>
+</blockquote>
+</li>
+<li><p>问题二：提示找不到github；</p>
+<blockquote>
+<p>解决：<br>注意在根目录的 _config.yml 中，最后<code>type=git</code>，不是github。</p>
+</blockquote>
+</li>
+<li><p>问题三:部署时，要输入username和password，而且password打字不显示？！！</p>
+<blockquote>
+<p>解决：<br>用户名是github的注册邮箱，密码直接输入，然后enter就好。（看不见就对了，但一定要输入正确）</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
@@ -254,7 +274,7 @@
 </nav>
 
         <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2015/08/14/hello-world/" data-title="Hello World" data-url="http://yoursite.com/2015/08/14/hello-world/"></div>
+<div class="ds-thread" data-thread-key="2015/08/17/hello-world/" data-title="Hexo探索（一）" data-url="http://yoursite.com/2015/08/17/hello-world/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"duoshuo_name"};
 (function() {
