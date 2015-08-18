@@ -3,18 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | Hedy&#39;s blog</title>
+  <title>初识JavaScript | Hedy&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Be pleasantly surprised everyday">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://hadyhan.github.io/about/index.html">
+  <meta name="description" content="JS是解释性语言，源代码放在HTML里。在&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;里说函数的定义、变量的定义。在&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;里是去完成实际的动作。
+
+比如，用JS写一篇文章。
+&amp;lt;script onLoad=&quot;alert(&apos;hi&apos;)&quot;&amp;gt;
+    var hello=&quot;Hello&quot;；
+    document.write(&quot;Hello Wor">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初识JavaScript">
+<meta property="og:url" content="https://hadyhan.github.io/2015/08/18/JS1/index.html">
 <meta property="og:site_name" content="Hedy's blog">
-<meta property="og:description" content="Be pleasantly surprised everyday">
-<meta property="og:updated_time" content="2015-08-16T09:30:25.233Z">
+<meta property="og:description" content="JS是解释性语言，源代码放在HTML里。在&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;里说函数的定义、变量的定义。在&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;里是去完成实际的动作。
+
+比如，用JS写一篇文章。
+&amp;lt;script onLoad=&quot;alert(&apos;hi&apos;)&quot;&amp;gt;
+    var hello=&quot;Hello&quot;；
+    document.write(&quot;Hello Wor">
+<meta property="og:updated_time" content="2015-08-18T15:12:15.359Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="Be pleasantly surprised everyday">
+<meta name="twitter:title" content="初识JavaScript">
+<meta name="twitter:description" content="JS是解释性语言，源代码放在HTML里。在&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;里说函数的定义、变量的定义。在&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;里是去完成实际的动作。
+
+比如，用JS写一篇文章。
+&amp;lt;script onLoad=&quot;alert(&apos;hi&apos;)&quot;&amp;gt;
+    var hello=&quot;Hello&quot;；
+    document.write(&quot;Hello Wor">
   
     <link rel="alternative" href="/atom.xml" title="Hedy&#39;s blog" type="application/atom+xml">
   
@@ -178,11 +193,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-JS1" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-  	<time datetime="2015-08-16T09:30:25.000Z" itemprop="datePublished">2015-08-16</time>
+      <a href="/2015/08/18/JS1/" class="article-date">
+  	<time datetime="2015-08-18T15:12:15.359Z" itemprop="datePublished">2015-08-18</time>
 </a>
     </div>
   
@@ -195,7 +210,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      初识JavaScript
     </h1>
   
 
@@ -203,6 +218,10 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+	</div>
+
         
 
         <div class="clearfix"></div>
@@ -211,13 +230,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <blockquote>
+<p>JS是解释性语言，源代码放在HTML里。<br>在<code>&lt;head&gt;&lt;/head&gt;</code>里说函数的定义、变量的定义。<br>在<code>&lt;body&gt;&lt;/body&gt;</code>里是去完成实际的动作。</p>
+</blockquote>
+<p>比如，用JS写一篇文章。</p>
+<pre><code><span class="tag">&lt;<span class="title">script</span> <span class="attribute">onLoad</span>=<span class="value">"alert('hi')"</span>&gt;</span><span class="javascript">
+    <span class="keyword">var</span> hello=<span class="string">"Hello"</span>；
+    <span class="built_in">document</span>.write(<span class="string">"Hello World"</span>);
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</code></pre><ul>
+<li>onLoad=”alert(‘hi’)在打开页面时弹出提示框“hi”；</li>
+<li>var（varible）定义变量（变量是指在表达式中存放数据的地，变量第一个字符不能是数字），这里有了一个叫做hello的变量，给它赋值“Hello”（初值）；</li>
+<li>document（这个对象）“.”（运算符）。document做write这个动作。()内是参数，””内是字符串——将Hello World写到HTML中。</li>
+</ul>
+
       
     </div>
     
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2015/08/18/github1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">github for windows 各种failed解决办法</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -265,7 +307,7 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
