@@ -115,7 +115,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Bootstrap/" style="font-size: 15px;">Bootstrap</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Jotting/" style="font-size: 10px;">Jotting</a>
+						<a href="/tags/Bootstrap/" style="font-size: 20px;">Bootstrap</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Jotting/" style="font-size: 10px;">Jotting</a>
 					</div>
 				</section>
 				
@@ -186,6 +186,97 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-bootstrap3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/21/bootstrap3/" class="article-date">
+  	<time datetime="2015-08-21T13:36:28.965Z" itemprop="datePublished">2015-08-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/21/bootstrap3/">bootstrap:表单</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>.form-control</strong>：于input、select、textarea添加类名，增加定制效果；</p>
+<blockquote>
+<ol>
+<li>在Bootstrap中使用input时也必须添加type类型，为了让控件在各种表单风格中样式不出错，需要添加类名“form-control”；</li>
+<li>文本域<code>&lt;textarea&gt;</code>和原始使用方法一样，设置rows可定义其高度，设置cols可以设置其宽度。但如果textarea元素中添加了类名“form-control”类名，则无需设置cols属性。因为Bootstrap框架中的“form-control”样式的表单控件宽度为100%或auto。</li>
+<li>在form-control基础上：<br><strong>.input-sm</strong>:让控件比正常大小更小<br><strong>.input-lg</strong>:让控件比正常大小更大</li>
+<li>焦点状态是通过伪类“:focus”来实现；</li>
+<li>禁用状态：只需要在需要禁用的表单控件上加上“disabled”即可：<br><code>&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;表单已禁用，不能输入&quot; disabled&gt;</code><br>如果fieldset设置了disabled属性，整个域都将处于被禁用状态:<br><code>&lt;fieldset disabled&gt;&lt;/fieldset&gt;</code><br>如果legend中有输入框的话，这个输入框是无法被禁用的;</li>
+</ol>
+</blockquote>
+<p><strong>.form-horizontal</strong>：在<code>&lt;form&gt;</code>元素上使用，实现水平表单效果；</p>
+<blockquote>
+<p>在Bootstrap框架中要实现水平表单效果，必须满足以下两个条件：<br>1、在<code>&lt;form&gt;</code>元素是使用类名“form-horizontal”。<br>2、配合Bootstrap框架的网格系统。</p>
+</blockquote>
+<p><strong>.form-inline</strong>：实现表单在同一行显示；</p>
+<p><strong>.checkbox</strong>和<strong>.radio</strong>：来处理复选框、单选按钮与标签的对齐方式。</p>
+<blockquote>
+<ol>
+<li>不管是checkbox还是radio都使用label包起来了</li>
+<li>checkbox连同label标签放置在一个名为“.checkbox”的容器内</li>
+<li>radio连同label标签放置在一个名为“.radio”的容器内</li>
+<li>如果checkbox需要水平排列，只需要在label标签上添加“<strong>.checkbox-inline</strong>”</li>
+<li>如果radio需要水平排列，只需要在label标签上添加“<strong>.radio-inline</strong>”</li>
+</ol>
+</blockquote>
+<p>表单验证:<br>验证状态样式,使用的时候只需要在form-group容器上对应添加状态类名:</p>
+<ol>
+<li><strong>.has-warning</strong>:警告状态（黄色）</li>
+<li><strong>.has-error</strong>：错误状态（红色）</li>
+<li><strong>.has-success</strong>：成功状态（绿色）</li>
+<li>相应的icon图标，只需要添加：<strong>.has-feedback</strong>。在 Bootstrap 的小图标都是使用@font-face来制作。必须在表单中添加了一个 span 元素。</li>
+<li><p><strong>.help-block</strong>:将提示信息以块状显示，并且显示在控件底部。</p>
+ <form role="form"><br> <div class="form-group has-success has-feedback"><br>   <label class="control-label" for="inputSuccess1">成功状态</label><br>   <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态"><br>   <span class="help-block">你输入的信息是正确的</span><br>   <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span><br> </div><br> <div class="form-group has-warning"><br>   <label class="control-label" for="inputWarning1">警告状态</label><br>   <input type="text" class="form-control" id="inputWarning1" placeholder="警告状态"><br>   <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span><br> </div><br> <div class="form-group has-error"><br>   <label class="control-label" for="inputError1">错误状态</label><br>   <input type="text" class="form-control" id="inputError1" placeholder="错误状态"><br>   <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span><br> </div><br> </form>
+
+
+</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bootstrap/">Bootstrap</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-jotting1" class="article article-type-post" itemscope itemprop="blogPost">
   
