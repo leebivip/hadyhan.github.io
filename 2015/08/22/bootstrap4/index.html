@@ -3,30 +3,36 @@
 <head>
   <meta charset="utf-8">
   
-  <title>bootstrap:表单 | Hedy&#39;s blog</title>
+  <title>bootstrap:按钮&amp;图像 | Hedy&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content=".form-control：于input、select、textarea添加类名，增加定制效果；
+  <meta name="description" content="按钮的样式风格：
+Default Primary Success Info Warning Danger Link
 
+&amp;lt;!-- Standard button --&amp;gt;
+&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&amp;gt;Default&amp;lt;/button&amp;gt;
 
-在Bootstrap中使用input时也必须添加type类型，为了让控件在各种表单风格中样式不出错，需要添加类名“form-control”；
-文本域&amp;lt;textarea&amp;gt;和原始使用方法一样，设置rows可定义其高度，设置cols可以设置其宽度。但如果textarea元素中添加了类名“f">
+&amp;lt;!-- Provides extra visual weig">
 <meta property="og:type" content="article">
-<meta property="og:title" content="bootstrap:表单">
-<meta property="og:url" content="https://hadyhan.github.io/2015/08/21/bootstrap3/index.html">
+<meta property="og:title" content="bootstrap:按钮&图像">
+<meta property="og:url" content="https://hadyhan.github.io/2015/08/22/bootstrap4/index.html">
 <meta property="og:site_name" content="Hedy's blog">
-<meta property="og:description" content=".form-control：于input、select、textarea添加类名，增加定制效果；
+<meta property="og:description" content="按钮的样式风格：
+Default Primary Success Info Warning Danger Link
 
+&amp;lt;!-- Standard button --&amp;gt;
+&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&amp;gt;Default&amp;lt;/button&amp;gt;
 
-在Bootstrap中使用input时也必须添加type类型，为了让控件在各种表单风格中样式不出错，需要添加类名“form-control”；
-文本域&amp;lt;textarea&amp;gt;和原始使用方法一样，设置rows可定义其高度，设置cols可以设置其宽度。但如果textarea元素中添加了类名“f">
-<meta property="og:updated_time" content="2015-08-21T13:36:28.934Z">
+&amp;lt;!-- Provides extra visual weig">
+<meta property="og:updated_time" content="2015-08-22T04:35:23.516Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="bootstrap:表单">
-<meta name="twitter:description" content=".form-control：于input、select、textarea添加类名，增加定制效果；
+<meta name="twitter:title" content="bootstrap:按钮&图像">
+<meta name="twitter:description" content="按钮的样式风格：
+Default Primary Success Info Warning Danger Link
 
+&amp;lt;!-- Standard button --&amp;gt;
+&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&amp;gt;Default&amp;lt;/button&amp;gt;
 
-在Bootstrap中使用input时也必须添加type类型，为了让控件在各种表单风格中样式不出错，需要添加类名“form-control”；
-文本域&amp;lt;textarea&amp;gt;和原始使用方法一样，设置rows可定义其高度，设置cols可以设置其宽度。但如果textarea元素中添加了类名“f">
+&amp;lt;!-- Provides extra visual weig">
   
     <link rel="alternative" href="/atom.xml" title="Hedy&#39;s blog" type="application/atom+xml">
   
@@ -198,11 +204,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-bootstrap3" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-bootstrap4" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/08/21/bootstrap3/" class="article-date">
-  	<time datetime="2015-08-21T13:36:28.965Z" itemprop="datePublished">2015-08-21</time>
+      <a href="/2015/08/22/bootstrap4/" class="article-date">
+  	<time datetime="2015-08-22T04:35:23.560Z" itemprop="datePublished">2015-08-22</time>
 </a>
     </div>
   
@@ -215,7 +221,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      bootstrap:表单
+      bootstrap:按钮&amp;图像
     </h1>
   
 
@@ -235,43 +241,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>.form-control</strong>：于input、select、textarea添加类名，增加定制效果；</p>
-<blockquote>
-<ol>
-<li>在Bootstrap中使用input时也必须添加type类型，为了让控件在各种表单风格中样式不出错，需要添加类名“form-control”；</li>
-<li>文本域<code>&lt;textarea&gt;</code>和原始使用方法一样，设置rows可定义其高度，设置cols可以设置其宽度。但如果textarea元素中添加了类名“form-control”类名，则无需设置cols属性。因为Bootstrap框架中的“form-control”样式的表单控件宽度为100%或auto。</li>
-<li>在form-control基础上：<br><strong>.input-sm</strong>:让控件比正常大小更小<br><strong>.input-lg</strong>:让控件比正常大小更大</li>
-<li>焦点状态是通过伪类“:focus”来实现；</li>
-<li>禁用状态：只需要在需要禁用的表单控件上加上“disabled”即可：<br><code>&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;表单已禁用，不能输入&quot; disabled&gt;</code><br>如果fieldset设置了disabled属性，整个域都将处于被禁用状态:<br><code>&lt;fieldset disabled&gt;&lt;/fieldset&gt;</code><br>如果legend中有输入框的话，这个输入框是无法被禁用的;</li>
-</ol>
-</blockquote>
-<p><strong>.form-horizontal</strong>：在<code>&lt;form&gt;</code>元素上使用，实现水平表单效果；</p>
-<blockquote>
-<p>在Bootstrap框架中要实现水平表单效果，必须满足以下两个条件：<br>1、在<code>&lt;form&gt;</code>元素是使用类名“form-horizontal”。<br>2、配合Bootstrap框架的网格系统。</p>
-</blockquote>
-<p><strong>.form-inline</strong>：实现表单在同一行显示；</p>
-<p><strong>.checkbox</strong>和<strong>.radio</strong>：来处理复选框、单选按钮与标签的对齐方式。</p>
-<blockquote>
-<ol>
-<li>不管是checkbox还是radio都使用label包起来了</li>
-<li>checkbox连同label标签放置在一个名为“.checkbox”的容器内</li>
-<li>radio连同label标签放置在一个名为“.radio”的容器内</li>
-<li>如果checkbox需要水平排列，只需要在label标签上添加“<strong>.checkbox-inline</strong>”</li>
-<li>如果radio需要水平排列，只需要在label标签上添加“<strong>.radio-inline</strong>”</li>
-</ol>
-</blockquote>
-<p>表单验证:<br>验证状态样式,使用的时候只需要在form-group容器上对应添加状态类名:</p>
-<ol>
-<li><strong>.has-warning</strong>:警告状态（黄色）</li>
-<li><strong>.has-error</strong>：错误状态（红色）</li>
-<li><strong>.has-success</strong>：成功状态（绿色）</li>
-<li>相应的icon图标，只需要添加：<strong>.has-feedback</strong>。在 Bootstrap 的小图标都是使用@font-face来制作。必须在表单中添加了一个 span 元素。</li>
-<li><p><strong>.help-block</strong>:将提示信息以块状显示，并且显示在控件底部。</p>
- <form role="form"><br> <div class="form-group has-success has-feedback"><br>   <label class="control-label" for="inputSuccess1">成功状态</label><br>   <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态"><br>   <span class="help-block">你输入的信息是正确的</span><br>   <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span><br> </div><br> <div class="form-group has-warning"><br>   <label class="control-label" for="inputWarning1">警告状态</label><br>   <input type="text" class="form-control" id="inputWarning1" placeholder="警告状态"><br>   <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span><br> </div><br> <div class="form-group has-error"><br>   <label class="control-label" for="inputError1">错误状态</label><br>   <input type="text" class="form-control" id="inputError1" placeholder="错误状态"><br>   <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span><br> </div><br> </form>
+        <p><strong><em>按钮的样式风格：</em></strong></p>
+<button type="button" class="btn btn-default">Default</button> <button type="button" class="btn btn-primary">Primary</button> <button type="button" class="btn btn-success">Success</button> <button type="button" class="btn btn-info">Info</button> <button type="button" class="btn btn-warning">Warning</button> <button type="button" class="btn btn-danger">Danger</button> <button type="button" class="btn btn-link">Link</button>
 
+<pre><code><span class="comment">&lt;!-- Standard button --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Default<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
 
-</li>
-</ol>
+<span class="comment">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary"</span>&gt;</span>Primary<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Indicates a successful or positive action --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-success"</span>&gt;</span>Success<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Contextual button for informational alert messages --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-info"</span>&gt;</span>Info<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Indicates caution should be taken with this action --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-warning"</span>&gt;</span>Warning<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Indicates a dangerous or potentially negative action --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-danger"</span>&gt;</span>Danger<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-link"</span>&gt;</span>Link<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+</code></pre><p>.btn-default:默认风格；<br>注意:要在制作按钮的标签元素上添加类名“btn”;<br>.btn-sm：小型按钮；<br>.btn-lg：大型按钮；<br>.btn-xs：超小型按钮；<br>Bootstrap按钮的活动状态主要包括按钮的悬浮状态(:hover)，点击状态(:active)和焦点状态（:focus）</p>
+<p><strong><em>图像的样式风格：</em></strong></p>
+<pre><code>&lt;img  <span class="keyword">class</span>=<span class="string">"img-rounded"</span> alt=<span class="string">"140x140"</span> src=<span class="string">"http://placehold.it/140x140"</span>&gt;
+</code></pre><p>1、img-responsive：响应式图片，主要针对于响应式设计<br>2、img-rounded：圆角图片<br>3、img-circle：圆形图片<br>4、img-thumbnail：缩略图片</p>
+<p>对icon设置一个默认样式：添加“.glyphicon”：</p>
+<pre><code><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"glyphicon glyphicon-plus"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+</code></pre><p><a href="http://getbootstrap.com/components/#glyphicons到此参考。" target="_blank" rel="external">http://getbootstrap.com/components/#glyphicons到此参考。</a></p>
 
       
     </div>
@@ -281,18 +280,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/08/22/bootstrap4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          bootstrap:按钮&amp;图像
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/08/21/jotting1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">この夏休み（2015.08.21）</div>
+    <a href="/2015/08/21/bootstrap3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">bootstrap:表单</div>
       <strong class="article-nav-caption">></strong>
     </a>
   

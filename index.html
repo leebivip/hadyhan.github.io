@@ -115,7 +115,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Bootstrap/" style="font-size: 20px;">Bootstrap</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Jotting/" style="font-size: 10px;">Jotting</a>
+						<a href="/tags/Bootstrap/" style="font-size: 20px;">Bootstrap</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Jotting/" style="font-size: 10px;">Jotting</a>
 					</div>
 				</section>
 				
@@ -186,6 +186,90 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-bootstrap4" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/22/bootstrap4/" class="article-date">
+  	<time datetime="2015-08-22T04:35:23.560Z" itemprop="datePublished">2015-08-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/22/bootstrap4/">bootstrap:按钮&amp;图像</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong><em>按钮的样式风格：</em></strong></p>
+<button type="button" class="btn btn-default">Default</button> <button type="button" class="btn btn-primary">Primary</button> <button type="button" class="btn btn-success">Success</button> <button type="button" class="btn btn-info">Info</button> <button type="button" class="btn btn-warning">Warning</button> <button type="button" class="btn btn-danger">Danger</button> <button type="button" class="btn btn-link">Link</button>
+
+<pre><code><span class="comment">&lt;!-- Standard button --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Default<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary"</span>&gt;</span>Primary<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Indicates a successful or positive action --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-success"</span>&gt;</span>Success<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Contextual button for informational alert messages --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-info"</span>&gt;</span>Info<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Indicates caution should be taken with this action --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-warning"</span>&gt;</span>Warning<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Indicates a dangerous or potentially negative action --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-danger"</span>&gt;</span>Danger<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-link"</span>&gt;</span>Link<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+</code></pre><p>.btn-default:默认风格；<br>注意:要在制作按钮的标签元素上添加类名“btn”;<br>.btn-sm：小型按钮；<br>.btn-lg：大型按钮；<br>.btn-xs：超小型按钮；<br>Bootstrap按钮的活动状态主要包括按钮的悬浮状态(:hover)，点击状态(:active)和焦点状态（:focus）</p>
+<p><strong><em>图像的样式风格：</em></strong></p>
+<pre><code>&lt;img  <span class="keyword">class</span>=<span class="string">"img-rounded"</span> alt=<span class="string">"140x140"</span> src=<span class="string">"http://placehold.it/140x140"</span>&gt;
+</code></pre><p>1、img-responsive：响应式图片，主要针对于响应式设计<br>2、img-rounded：圆角图片<br>3、img-circle：圆形图片<br>4、img-thumbnail：缩略图片</p>
+<p>对icon设置一个默认样式：添加“.glyphicon”：</p>
+<pre><code><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"glyphicon glyphicon-plus"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+</code></pre><p><a href="http://getbootstrap.com/components/#glyphicons到此参考。" target="_blank" rel="external">http://getbootstrap.com/components/#glyphicons到此参考。</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bootstrap/">Bootstrap</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-bootstrap3" class="article article-type-post" itemscope itemprop="blogPost">
   
