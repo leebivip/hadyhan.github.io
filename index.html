@@ -187,11 +187,68 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-bootstrap6" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/25/bootstrap6/" class="article-date">
+  	<time datetime="2015-08-25T01:31:04.002Z" itemprop="datePublished">2015-08-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/25/bootstrap6/">Bootstrap JS（二）下拉菜单</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/img/3.JPG" alt="img1"></p>
+<p><img src="/img/4.JPG" alt="img2"></p>
+<p><img src="/img/5.JPG" alt="img3"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bootstrap/">Bootstrap</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-bootstrap5" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/08/24/bootstrap5/" class="article-date">
-  	<time datetime="2015-08-24T15:24:56.387Z" itemprop="datePublished">2015-08-24</time>
+  	<time datetime="2015-08-24T15:30:12.795Z" itemprop="datePublished">2015-08-24</time>
 </a>
     </div>
   
@@ -217,14 +274,14 @@
 <p>当我发现手写还是比键盘码字舒服时，我选择了上传图片。</p>
 <p><strong>如何在文章中插入图片</strong></p>
 <ul>
-<li>使用markdown写文章，插入图片的格式为<img src="链接地址" alt="图片名称">，这里要说的是链接地址怎么写。对于hexo，有两种方式：</li>
-<li>使用本地路径：在hexo/source目录下新建一个img文件夹，将图片放入该文件夹下，插入图片时链接即为/img/图片名称。</li>
+<li>使用markdown写文章，插入图片的格式为<code>![图片名称](链接地址)</code>，这里要说的是链接地址怎么写。对于hexo，有两种方式：</li>
+<li>使用本地路径：在hexo/source目录下新建一个img文件夹，将图片放入该文件夹下，插入图片时链接即为<code>/img/图片名称</code>。</li>
 <li>使用微博图床，地址<a href="http://weibotuchuang.sinaapp.com/，将图片拖入区域中，会生成图片的URL，这就是链接地址。" target="_blank" rel="external">http://weibotuchuang.sinaapp.com/，将图片拖入区域中，会生成图片的URL，这就是链接地址。</a></li>
 </ul>
 </blockquote>
 <p><strong>模态框</strong></p>
-<p><img src="img/1.JPG" alt="img"></p>
-<p><img src="img/2.JPG" alt="img"></p>
+<p><img src="/img/1.JPG" alt="img1"></p>
+<p><img src="/img/2.JPG" alt="img2"></p>
 
       
     </div>
@@ -810,89 +867,10 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2015/08/17/hello-world/" class="article-date">
-  	<time datetime="2015-08-17T09:56:01.401Z" itemprop="datePublished">2015-08-17</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/17/hello-world/">Hexo探索（一）：安装配置问题与解决</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>  刚听说Hexo的时候，我完全不知道这是什么。什么叫做小白起步、雏鹰起飞……但是，真正用起来，却觉得这真是一个神奇的东西。</p>
-</blockquote>
-<ul>
-<li>用hexo在github上创建个人博客<br>  推介一个详细的blog：<a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">http://www.jianshu.com/p/05289a4bc8b2</a></li>
-</ul>
-<hr>
-<ul>
-<li><p><strong>hexo安装配置问题与解决</strong></p>
-<ol>
-<li>首先，在hexo根文件下右击–Git Bush做好准备；</li>
-<li><p>问题一：无数次<code>hexo d</code>，皆失败；</p>
-<blockquote>
-<p>解决：<br><code>hexo init</code>–<code>npm install hexo --save</code>–<code>hexo g</code>–<code>npm install</code>–<code>npm install hexo-deployer-git --save</code>–<code>hexo g</code>–<code>hexo d</code>。</p>
-</blockquote>
-</li>
-<li><p>问题二：提示找不到github；</p>
-<blockquote>
-<p>解决：<br>注意在根目录的 _config.yml 中，最后<code>type=git</code>，不是github。</p>
-</blockquote>
-</li>
-<li><p>问题三:部署时，要输入username和password，而且password打字不显示？！！</p>
-<blockquote>
-<p>解决：<br>用户名是github的注册邮箱，密码直接输入，然后enter就好。（看不见就对了，但一定要输入正确）</p>
-</blockquote>
-</li>
-</ol>
-</li>
-</ul>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </div>
       <footer id="footer">
